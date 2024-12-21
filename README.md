@@ -1,1 +1,0 @@
-# candlestick_patterns

@@ -65,6 +65,8 @@ candle_type=list(df_info['type'].unique())
 
 if debug:st.write(f'type:',candle_type)
 
+#st.write(f'length of df_info:',len(df_info))
+
 #allow to chose the type of candlestick pattern
 selected_type=st.sidebar.selectbox("Select a Candlestick Pattern Type",['ALL']+candle_type,index=0,key='type')
 

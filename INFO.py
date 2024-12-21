@@ -14,11 +14,41 @@ st.warning(disclaimer_text,icon="⚠️")
 
 # About
 
-st.markdown(f""" 
-<div style="text-align:left;">
-            1. This is a simple stock screener that identifies candlestick patterns in stock data for the last trading day. <br>
-            2. It allows to filter the market based on SNP500, DOW30, NASDAQ100, IPOS>=2020 <br>
-            3. It also allows the user to filter stocks based on Closing Price, Simple Moving Average (SMA), and Relative Strength Index (RSI).<br>
-            4. Candlestick pattern might hint the possible pullbacks and is very useful for traders who use technical analysis to make trading decisions. <br>
-            </div>
-            """,unsafe_allow_html=True)
+st.markdown("""
+### Candlestick Pattern Screener Features:
+
+1. **Pattern Identification:**  
+   This screener identifies candlestick patterns in stock data from the most recent trading day.  
+   
+2. **Market Filtering:**  
+   Allows filtering the market based on criteria such as:
+   - S&P 500
+   - DOW 30
+   - NASDAQ 100
+   - IPOs from 2020 onwards
+
+3. **Pattern Selection:**  
+   Users can select candlestick patterns from a list of **61 options** or choose based on the following candlestick types:
+   - **Bullish Reversal**
+   - **Bullish Continuation**
+   - **Bearish Reversal**
+   - **Bearish Continuation**
+   - Reversal
+   - Continuation
+   - Reversal or Continuation
+   - Indecision
+   - Trend Continuation
+
+4. **Chart Viewing:**  
+   View the **yearly candlestick chart** and a **zoomed-in view** of the candlestick pattern for the most recent trading day.
+
+5. **Stock Data Table:**  
+   The screener provides an information table with key stock data:
+   - **CLOSE**, **CHANGE, CHANGE%** , **VOLUME** , **SMAs** , **RSI**, **ATR**
+
+6. **Pattern Descriptions:**  
+   Each candlestick pattern is accompanied by a brief description and its characteristics.
+
+7. **Trading Insights:**  
+   Candlestick patterns may suggest potential pullbacks, making them a valuable tool for traders who rely on **technical analysis** for decision-making.
+""")
