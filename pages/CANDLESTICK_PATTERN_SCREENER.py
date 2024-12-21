@@ -245,7 +245,7 @@ with st.container(border=False):
     # Style the DataFrame
     styled_df = (
     df.style.format("{:.2f}", subset=df.select_dtypes(include=["float64", "int64"]).columns)
-    .applymap(style_table, subset=["Change%", "Net Change"])
+    .apply(style_table, subset=["Change%", "Net Change"])
     )
 
 # Display the table in Streamlit
