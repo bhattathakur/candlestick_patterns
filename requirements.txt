@@ -1,4 +1,4 @@
-python
+
 pandas
 plotly
 streamlit
