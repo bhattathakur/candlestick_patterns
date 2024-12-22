@@ -253,7 +253,7 @@ with st.container(border=False):
     # Style the DataFrame
     styled_df = (
     df.style.format("{:.2f}", subset=df.select_dtypes(include=["float64", "int64"]).columns)
-    .apply(lambda row:row.apply(style_table), subset=["Change%", "Net Change"],axis=1)
+    .apply(lambda row:row.apply(style_table), subset=["Change%", "Change"],axis=1)
     )
 
 # Display the table in Streamlit
