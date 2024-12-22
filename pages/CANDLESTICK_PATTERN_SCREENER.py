@@ -249,11 +249,15 @@ with st.container(border=False):
          return f"color: {color}"
         except:
             return None
-
+    style_dict = {
+    'text-align': 'center',
+    'font-family': 'Courier,monospace',
+    'font-size': '16px',}
     # Style the DataFrame
     styled_df = (
     df.style.format("{:.2f}", subset=df.select_dtypes(include=["float64", "int64"]).columns)
     .apply(lambda row:row.apply(style_table), subset=["Change%", "Change"],axis=1)
+    .set_properties(**style_dict)
     )
 
 # Display the table in Streamlit
