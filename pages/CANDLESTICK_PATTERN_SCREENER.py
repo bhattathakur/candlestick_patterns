@@ -167,6 +167,10 @@ last_volume20=round(pattern_df[pattern_df['TICKER']==selected_ticker]['VOL20'].v
 sma50=round(plot_df['SMA50'].values[-1],2)
 sma200=round(plot_df['SMA200'].values[-1],2)
 
+#52week max and min
+max_52week=plot_df['Close'].max()
+min_52week=plot_df['Close'].min()
+
 #calculate the percentage change and net change
 percentage_change=round(((last_trade_close-second_last_close)/second_last_close)*100,2)
 net_change=round(last_trade_close-second_last_close,2)
@@ -199,6 +203,10 @@ dislay_dict={
 "ATR":last_atr,
 "SMA 50":sma50,
 "SMA 200":sma200,
+"52WEEK_HIGH":max_52week,
+"52WEEK_LOW":min_52week,
+"PATTERN":pattern
+
 }
 
 #display the dict
