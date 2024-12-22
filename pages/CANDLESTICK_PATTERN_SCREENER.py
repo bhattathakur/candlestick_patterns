@@ -121,7 +121,7 @@ result_ticker_list=pattern_df['TICKER'].unique()
 #st.sidebar.markdown(f"<h3 style='text-align:center;color:magenta'> RESULTANT TICKERS ARE BELOW</h3>",unsafe_allow_html=True)
 st.sidebar.markdown(f"<h4 style='text-align:center;color:red;background:yellow'>️TICKERS WITH <span style='color:blue;'>{selected_pattern} </span>PATTERN BELOW ️</h4>",unsafe_allow_html=True)
 st.sidebar.markdown("<br>",unsafe_allow_html=True)
-st.sidebar.markdown(f"<h4 style='text-align:center;color:black;background:lightblue'>SELECT A TICKER FOR A PLOT 👇</h4>",unsafe_allow_html=True)
+st.sidebar.markdown(f"<h4 style='text-align:center;color:black;background:lightblue'>SELECT A TICKER FOR A PLOT <br> 👇</h4>",unsafe_allow_html=True)
 #tickers are selected here
 selected_ticker=st.sidebar.radio(f"CHOOSE ONE",result_ticker_list,index=0,key='ticker')
 
