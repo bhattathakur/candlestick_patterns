@@ -193,11 +193,11 @@ if debug:st.write(f'sma200:',sma200)
 #display dict creation
 dislay_dict={
 "Ticker":ticker,
-"Last Trade Date":last_trade_date,
+"Last Date":last_trade_date,
 "Close":last_trade_close,
-"Net Change":net_change,
+"Change":net_change,
 "Change%":percentage_change,
-"Last Volume (M)":f"{last_volume}",
+"Last VOL(M)":f"{last_volume}",
 "20DAY_AVG_VOL(M)":f'{last_volume20}',
 "RSI":last_rsi,
 "ATR":last_atr,
