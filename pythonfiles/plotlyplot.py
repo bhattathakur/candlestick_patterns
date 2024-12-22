@@ -52,7 +52,7 @@ def get_respective_pattern(temp_df,pattern_name):
                     showlegend=False,
                     yaxis_title='Price [$]',
                     width=1400,
-                    height=500,
+                    height=700,
                     )
   rangebreaks=[
         dict(bounds=["sat", "mon"]), #hide weekends
