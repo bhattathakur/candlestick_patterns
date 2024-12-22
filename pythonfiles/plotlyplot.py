@@ -86,5 +86,6 @@ def get_respective_pattern(temp_df,pattern_name):
     )
 #fig update
   fig.update_layout(showlegend=True)
+  fig.update_layout(hovermode='x_unified')
 
   return fig
