@@ -92,7 +92,7 @@ def get_respective_pattern(temp_df,pattern_name):
   fig.update_layout(hovermode='x unified')
   fig.update_xaxes(
     #rangeslider_visible=True,
-    row=1,col=1
+    row=1,col=1,
     rangeselector=dict(
         buttons=list([
             dict(count=1, label="1m", step="month", stepmode="backward"),
