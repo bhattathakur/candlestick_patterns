@@ -62,7 +62,7 @@ def get_respective_pattern(temp_df,pattern_name):
   fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=2,showgrid=True,dtick='M1',timeformat='%b')
   fig.update_xaxes(
     dtick="M1",
-    tickformat="%b\n%Y")
+    tickformat="%b\n%Y",row=1,col=1)
 
   # Update layout to center each subplot title
   fig.update_layout(
