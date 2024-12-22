@@ -212,7 +212,7 @@ plot_df.columns=plot_df.columns.str.lower()
 
 # Custom HTML to add a background color and border
 container_html =f"""
-<div style="background-color: #f0f8ff; border: 4px solid black; padding: 20px; border-radius: 10px;">
+<div style="background-color: #f0f8ff; border: 4px solid black; padding: 10px; border-radius: 10px;">
     <h6 style='text-align:center;color:blue'> {pattern_name}</h6>
     <h6 style='text-align:center;color:black'> {pattern_type}</h6>
    <div style="text-align:center;font-size: 18px;color:brown">
