@@ -59,7 +59,7 @@ def get_respective_pattern(temp_df,pattern_name):
         dict(values=["2024-12-25", "2025-01-01"])  # hide Christmas and New Year's
     ]
   fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=1,showgrid=True,dtick='M1',tickformat='%b\n%Y')
-  fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=2,showgrid=True,dtick='D1',tickformat='%d')
+  fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=2,showgrid=True,dtick='D1',tickformat='%d\n%M')
   # fig.update_xaxes(
   #   dtick="M1",
   #   tickformat="%b\n%Y",row=1,col=1)
