@@ -95,7 +95,7 @@ def get_respective_pattern(temp_df,pattern_name):
     row=1,col=1,
     rangeselector=dict(
         buttons=list([
-            dict(count=1, label="1m", step="month", stepmode="backward",color="blueviole"),
+            dict(count=1, label="1m", step="month", stepmode="backward",font=dict(color="blueviole")),
             dict(count=3, label="3m", step="month", stepmode="backward"),
             dict(count=6, label="6m", step="month", stepmode="backward"),
             dict(count=1, label="YTD", step="year", stepmode="todate"),
