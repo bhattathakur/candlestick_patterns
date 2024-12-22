@@ -205,7 +205,7 @@ dislay_dict={
 "SMA 200":sma200,
 "52WEEK_HIGH":max_52week,
 "52WEEK_LOW":min_52week,
-"PATTERN":pattern
+"PATTERN":pattern_name
 
 }
 
