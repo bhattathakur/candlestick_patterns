@@ -58,7 +58,7 @@ def get_respective_pattern(temp_df,pattern_name):
         dict(bounds=["sat", "mon"]), #hide weekends
         dict(values=["2024-12-25", "2025-01-01"])  # hide Christmas and New Year's
     ]
-  fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=1)
+  fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=1,showgrid=True)
   fig.update_xaxes(rangebreaks=rangebreaks,row=1,col=2)
   fig.update_xaxes(
     dtick="M1",
